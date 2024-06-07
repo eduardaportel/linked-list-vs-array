@@ -8,24 +8,30 @@ public class LinkedListExample{
 
         //  stack = LIFO; ex = stack of CD's
         // add = push(); remove = pop()
-        linkedList.push("A");
-        linkedList.push("B");
-        linkedList.push("C");
-        linkedList.push("D");
-        linkedList.push("F");
-        linkedList.pop();
-        System.out.println(linkedList);
+        // linkedList.push("A");
+        // linkedList.push("B");
+        // linkedList.push("C");
+        // linkedList.push("D");
+        // linkedList.push("F");
+        // linkedList.pop();
+        // System.out.println(linkedList);
         // D C B A
 
         // queue = FIFO; ex = queue of a market
-        // add = offer(); remove = poll();
+        // equeue = offer(); dequeue = poll();
         linkedList.offer("A");
         linkedList.offer("B");
         linkedList.offer("C");
         linkedList.offer("D");
         linkedList.offer("F");
-        linkedList.poll();
+        // linkedList.poll();
+
+        // add and remove
+        linkedList.add(4, "E");
+        linkedList.remove("E");
+
+
         System.out.println(linkedList);
-        // BCDF
+
     }
 }
