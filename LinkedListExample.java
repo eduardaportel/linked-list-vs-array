@@ -28,10 +28,20 @@ public class LinkedListExample{
 
         // add and remove
         linkedList.add(4, "E");
-        linkedList.remove("E");
+        // linkedList.remove("E");
 
+        // addFirst and addLast
+        linkedList.addFirst("0");
+        linkedList.addLast("G");
 
-        System.out.println(linkedList);
+        // indexOf an element
+        System.out.println("Index of C = " + linkedList.indexOf("C" ) + " \n");
+
+        // peek elements
+        System.out.println("First element: " + linkedList.peekFirst() + " \n");
+        System.out.println("Last element: " + linkedList.peekLast() + " \n");
+
+        System.out.println("List: " + linkedList + " \n");
 
     }
 }
