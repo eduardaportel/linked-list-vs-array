@@ -2,20 +2,12 @@ import java.util.*;
 public class LinkedListExample{
     public static void main(String[] args) {
 
+        // Linked List = store Nodes in 2 parts (data + address)
+        // Nodes are in non-consecutive memory locations
+
         // name of the LinkedList = linked list
         LinkedList<String> linkedList = new LinkedList<String>();
         // we can treat or Linked List as a queue or a stack
-
-        //  stack = LIFO; ex = stack of CD's
-        // add = push(); remove = pop()
-        // linkedList.push("A");
-        // linkedList.push("B");
-        // linkedList.push("C");
-        // linkedList.push("D");
-        // linkedList.push("F");
-        // linkedList.pop();
-        // System.out.println(linkedList);
-        // D C B A
 
         // queue = FIFO; ex = queue of a market
         // equeue = offer(); dequeue = poll();
@@ -28,11 +20,7 @@ public class LinkedListExample{
 
         // add and remove
         linkedList.add(4, "E");
-        // linkedList.remove("E");
-
-        // addFirst and addLast
-        linkedList.addFirst("0");
-        linkedList.addLast("G");
+        linkedList.remove("E");
 
         // indexOf an element
         System.out.println("Index of C = " + linkedList.indexOf("C" ) + " \n");
@@ -40,8 +28,17 @@ public class LinkedListExample{
         // peek elements
         System.out.println("First element: " + linkedList.peekFirst() + " \n");
         System.out.println("Last element: " + linkedList.peekLast() + " \n");
+        // addFirst and addLast
+        linkedList.addFirst("0");
+        linkedList.addLast("G");
 
+        String first = linkedList.removeFirst();
+        String last = linkedList.removeLast();
+
+        // print list
         System.out.println("List: " + linkedList + " \n");
+        System.out.println("After addFirst and addLast, the first element is " + first + 
+        " and the last is " + last);
 
     }
 }
